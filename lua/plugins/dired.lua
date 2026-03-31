@@ -3,6 +3,8 @@ return {
   dependencies = { "MunifTanjim/nui.nvim" },
   config = function()
     require("dired").setup({
+      path_separator = "/",
+      override_cwd = false,
       show_hidden = true,
       show_icons = true,
       sort_order = "name",

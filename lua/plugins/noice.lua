@@ -26,5 +26,9 @@ return {
     cmdline = {
       view = "cmdline",
     },
+    override = {
+      ["vim.ui.input"] = false,
+      ["vim.ui.select"] = false,
+    },
   },
 }
