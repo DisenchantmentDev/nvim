@@ -18,6 +18,8 @@
 
 vim.keymap.set("n", "<leader>ms", "<cmd>LspStart<CR>", { desc = "Start LSP" })
 vim.keymap.set("n", "<leader>mx", "<cmd>LspStop<CR>", { desc = "Stop LSP" })
+vim.keymap.set("n", "<leader>t", "<cmd>Dired<CR>", { desc = "Dired" })
+vim.keymap.set("n", "<leader>cg", ":Compile ", { desc = "Compile Mode", noremap = false })
 
 vim.keymap.set("n", "<Up>", "", { noremap = true, silent = true })
 vim.keymap.set("n", "<Down>", "", { noremap = true, silent = true })
@@ -40,8 +42,3 @@ vim.o.expandtab = true
 vim.o.softtabstop = 4
 
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
-
-vim.g.VM_maps = {
-  ["Select Cursor Down"] = "<leader>]",
-  ["Select Cursor Up"] = "<leader>[",
-}
