@@ -38,6 +38,13 @@ return {
         },
       },
     },
+    pyright = {
+      capabilities = (function()
+        local capabilities = vim.lsp.protocol.make_client_capabilities()
+        capabilities.textDocument.publishDiagnostics.tagSupport.valueSet = { 2 }
+        return capabilities
+      end)(),
+    },
     setup = {
       clangd = function(_, opts)
         local clangd_ext_opts = LazyVim.opts("clangd_extensions.nvim")

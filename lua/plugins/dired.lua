@@ -7,7 +7,7 @@ return {
       override_cwd = false,
       show_hidden = true,
       show_icons = true,
-      sort_order = "name",
+      sort_order = "dirs",
     })
   end,
 }
