@@ -18,7 +18,7 @@
 
 vim.keymap.set("n", "<leader>ms", "<cmd>LspStart<CR>", { desc = "Start LSP" })
 vim.keymap.set("n", "<leader>mx", "<cmd>LspStop<CR>", { desc = "Stop LSP" })
-vim.keymap.set("n", "<leader>t", "<cmd>Dired<CR>", { desc = "Dired" })
+vim.keymap.set("n", "<leader>t", "<cmd>Oil<CR>", { desc = "Dired" })
 vim.keymap.set("n", "<leader>z", ":Compile ", { desc = "Compile Mode", noremap = false })
 
 vim.keymap.set("n", "<Up>", "", { noremap = true, silent = true })

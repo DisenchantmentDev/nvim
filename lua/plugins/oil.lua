@@ -3,6 +3,18 @@ return {
   ---@module 'oil'
   ---@type oil.SetupOpts
   opts = {},
+  columns = {
+    "icon",
+    "permissions",
+    "size",
+    "mtime",
+  },
+  view_options = {
+    show_hidden = true,
+    sort = {
+      { "mtime", "desc" },
+    },
+  },
   -- Optional dependencies
   dependencies = { { "nvim-mini/mini.icons", opts = {} } },
   -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
